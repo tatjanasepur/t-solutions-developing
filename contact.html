@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="sr">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — T Solutions</title>
+  <link rel="stylesheet" href="styles.css"><link rel="icon" href="logo-badge.png">
+</head>
+<body>
+<header class="site-header"><div class="container header-inner">
+  <a class="brand" href="index.html"><img src="logo-mark.png" alt=""> <span>T-Solutions</span></a>
+  <nav id="nav" class="nav">
+    <a href="services.html">Services</a><a href="work.html">Work</a><a href="about.html">About</a>
+    <a href="contact.html" class="btn btn--ghost">Contact</a>
+  </nav><button class="nav-toggle" aria-label="Meni" aria-expanded="false">☰</button>
+</div></header>
+
+<section class="hero"><div class="container">
+  <p class="eyebrow">Kontakt</p>
+  <h1>Piši nam</h1>
+  <p class="lead">Belgrade, Serbia · <a href="mailto:tsolutionsdev@outlook.com">tsolutionsdev@outlook.com</a></p>
+</div></section>
+
+<section class="section"><div class="container">
+  <form id="contactForm" class="form">
+    <div class="form-row">
+      <label>Ime i prezime
+        <input type="text" name="name" required>
+      </label>
+      <label>Email
+        <input type="email" name="email" required>
+      </label>
+    </div>
+    <label>Poruka
+      <textarea name="message" rows="6" required placeholder="Kratak brif: cilj, publika, rok..."></textarea>
+    </label>
+    <button class="btn" type="submit">Pošalji</button>
+    <p id="contactNote" class="note" aria-live="polite"></p>
+  </form>
+
+  <p class="lead" style="margin-top:18px">
+    Alternativno: <a href="mailto:tsolutionsdev@outlook.com">tsolutionsdev@outlook.com</a>
+  </p>
+
+  <!-- Želiš pravu formu bez mailto? 
+       1) Otvori formspree.io, napravi formu, dobićeš endpoint npr. https://formspree.io/f/abcde
+       2) Zameni JS ili dodaj: <form action="https://formspree.io/f/abcde" method="POST"> sa input name="email","message" itd.
+  -->
+</div></section>
+
+<footer class="site-footer"><div class="container footer-inner">
+  <a class="brand-small" href="index.html"><img src="logo-badge.png" alt=""> <span>T-Solutions</span></a>
+  <p>© <span class="year"></span> T Solutions · Belgrade, Serbia</p>
+  <nav class="footer-nav"><a href="services.html">Services</a><a href="work.html">Work</a><a href="about.html">About</a></nav>
+</div></footer>
+<script src="script.js"></script>
+</body>
+</html>
