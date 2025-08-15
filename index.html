@@ -1,220 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="sr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>T Solutions</title>
-<style>
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Osnovne boje i fontovi */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #fff5f7;
-  color: #333;
-  line-height: 1.6;
-}
-
-/* Header */
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 10%;
-  background-color: white;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
-header img {
-  height: 50px;
-}
-nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #555;
-  font-weight: bold;
-}
-nav a:hover {
-  color: #e75480;
-}
-
-/* Hero sekcija */
-.hero {
-  background: linear-gradient(to right, #ffe1ec, #fff);
-  padding: 80px 10%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.hero-text {
-  max-width: 500px;
-}
-.hero-text h1 {
-  font-size: 2.5rem;
-  color: #e75480;
-}
-.hero-text p {
-  margin-top: 15px;
-  font-size: 1.1rem;
-}
-.hero img {
-  max-width: 300px;
-}
-
-/* Sekcije */
-section {
-  padding: 60px 10%;
-}
-section h2 {
-  text-align: center;
-  margin-bottom: 40px;
-  color: #e75480;
-}
-
-/* Usluge */
-.services {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-.service {
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
-  text-align: center;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.service:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 15px rgba(0,0,0,0.15);
-}
-
-/* Projekti */
-.projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-}
-.project {
-  background-color: white;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-}
-.project:hover {
-  transform: scale(1.03);
-}
-.project img {
-  width: 100%;
-  display: block;
-}
-.project p {
-  padding: 15px;
-}
-
-/* Kontakt */
-.contact {
-  background-color: #ffe1ec;
-  text-align: center;
-  padding: 40px 10%;
-}
-.contact p {
-  margin-bottom: 15px;
-}
-.contact a {
-  color: #e75480;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 20px;
-  font-size: 0.9rem;
-  color: #777;
-}
-</style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>T‑Solutions — Full‑Stack Web, .NET, Games & AI</title>
+<meta name="description" content="Boutique studio iz Beograda: elegantni sajtovi, .NET web aplikacije, mini igre i AI integracije.">
+<link rel="icon" href="logo-badge.png">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<header>
-  <img src="PUTANJA_DO_TVOG_VELIKOG_LOGA" alt="T Solutions logo">
-  <nav>
-    <a href="#usluge">Usluge</a>
-    <a href="#projekti">Projekti</a>
-    <a href="#kontakt">Kontakt</a>
+<header class="site-header"><div class="container header-inner">
+  <a class="brand" href="index.html"><img src="logo-mark.png" alt="T‑Solutions"><span>T‑Solutions</span></a>
+  <nav id="nav" class="nav">
+    <a href="services.html">Usluge</a>
+    <a href="work.html">Projekti</a>
+    <a href="about.html">O nama</a>
+    <a href="contact.html" class="btn btn--ghost">Kontakt</a>
   </nav>
-</header>
+  <button class="nav-toggle" aria-label="Meni" aria-expanded="false">☰</button>
+</div></header>
 
 <section class="hero">
-  <div class="hero-text">
-    <h1>Dobrodošli u T Solutions</h1>
-    <p>Mi smo full-stack digitalna agencija iz Beograda koja kreira moderne web stranice, aplikacije i inovativna softverska rešenja prilagođena vašim potrebama.</p>
-  </div>
-  <img src="PUTANJA_DO_TVOG_MALOG_LOGA" alt="T Solutions badge">
-</section>
-
-<section id="usluge">
-  <h2>Naše Usluge</h2>
-  <div class="services">
-    <div class="service">
-      <h3>Web Development</h3>
-      <p>Kreiramo moderne i responsivne web sajtove koristeći najnovije tehnologije.</p>
+  <div class="hero__media" aria-hidden="true"></div>
+  <div class="container hero__inner">
+    <p class="eyebrow">Belgrade, Serbia · Boutique Studio</p>
+    <h1>Digitalna iskustva koja <em>izgledaju odlično</em> i <em>rade brzo</em>.</h1>
+    <p class="lead">Full‑stack web, .NET backend, mini igre i AI integracije. Minimalizam, performanse i merljivi rezultati.</p>
+    <div class="cta">
+      <a class="btn" href="contact.html">Zatraži ponudu</a>
+      <a class="btn btn--ghost" href="work.html">Pogledaj projekte</a>
     </div>
-    <div class="service">
-      <h3>Mobile Apps</h3>
-      <p>Razvijamo mobilne aplikacije za Android i iOS prilagođene vašim korisnicima.</p>
-    </div>
-    <div class="service">
-      <h3>UI/UX Dizajn</h3>
-      <p>Pravimo vizuelno privlačna i funkcionalna korisnička iskustva.</p>
-    </div>
-    <div class="service">
-      <h3>Custom Softver</h3>
-      <p>Razvijamo specijalizovana rešenja koja optimizuju vaše poslovanje.</p>
-    </div>
+    <ul class="badges"><li>HTML · CSS · JS</li><li>.NET (C#)</li><li>UI/UX · SEO · Performance</li></ul>
   </div>
 </section>
 
-<section id="projekti">
-  <h2>Naši Projekti</h2>
-  <div class="projects">
-    <div class="project">
-      <img src="PUTANJA_DO_SLIKE_PROJEKTA_1" alt="Project 1">
-      <p>Spending Tracker aplikacija za praćenje lične potrošnje.</p>
+<section class="section">
+  <div class="container split">
+    <div>
+      <h2>Ko smo</h2>
+      <p class="lead">T‑Solutions je mali, fokusiran studio koji spaja inženjersku preciznost i editorial dizajn. Ručni rad, jasne hijerarhije i odlične performanse — bez generičkih šablona.</p>
     </div>
-    <div class="project">
-      <img src="PUTANJA_DO_SLIKE_PROJEKTA_2" alt="Project 2">
-      <p>Incident Management System za IT podršku.</p>
-    </div>
-    <div class="project">
-      <img src="PUTANJA_DO_SLIKE_PROJEKTA_3" alt="Project 3">
-      <p>Stylos Studio portfolio sajt.</p>
+    <aside class="card">
+      <h3>Brzi pregled</h3>
+      <ul class="badges" style="margin:0"><li>Design system</li><li>SEO setup</li><li>Hosting na GitHub/Cloud</li></ul>
+      <p style="margin-top:10px">Transparentni sprintovi i merenje učinka posle lansiranja.</p>
+    </aside>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>Usluge</h2>
+    <p class="lead">Svaka usluga ima svoju “iskru” — blagi pokret kao znak inovacije.</p>
+    <div class="services">
+      <article class="service"><h3>UX & Strategija</h3><p>Discovery, tokovi, wireframes i prototipi.</p><span class="chip">Istraživanje</span><span class="chip">Wireframe</span><span class="chip">Prototip</span></article>
+      <article class="service"><h3>UI Dizajn</h3><p>Editorial tipografija, boje i komponente.</p><span class="chip">Design system</span><span class="chip">Komponente</span><span class="chip">Handoff</span></article>
+      <article class="service"><h3>Front‑end</h3><p>Čist HTML/CSS/JS, a11y, SEO, brzina.</p><span class="chip">A11y</span><span class="chip">SEO</span><span class="chip">Lighthouse 100</span></article>
+      <article class="service"><h3>.NET Backend</h3><p>ASP.NET Core REST API i baze podataka.</p><span class="chip">C#</span><span class="chip">REST</span><span class="chip">EF Core</span></article>
+      <article class="service"><h3>Games & Interakcije</h3><p>Canvas/WebGL mini igre i mikro‑animacije.</p><span class="chip">Canvas</span><span class="chip">WebGL</span><span class="chip">Animacije</span></article>
+      <article class="service"><h3>AI Integracije</h3><p>Asistenti i automatizacije.</p><span class="chip">Chat</span><span class="chip">Content</span><span class="chip">Automation</span></article>
     </div>
   </div>
 </section>
 
-<section id="kontakt" class="contact">
-  <h2>Kontakt</h2>
-  <p>Email: <a href="mailto:tsolutionsdev@outlook.com">tsolutionsdev@outlook.com</a></p>
-  <p>Lokacija: Belgrade, Serbia</p>
+<section class="section">
+  <div class="container">
+    <h2>Izdvojeni projekti</h2>
+    <div class="gallery" style="margin-top:18px">
+      <a href="work.html"><img src="img/project-spending-tracker.png" alt="Spending Tracker"></a>
+      <a href="work.html"><img src="img/project-incident-system.png" alt="Incident Management"></a>
+      <a href="work.html"><img src="img/project-stylos-studio.png" alt="Stylos Studio"></a>
+    </div>
+  </div>
 </section>
 
-<footer>
-  &copy; 2025 T Solutions. Sva prava zadržana.
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <a class="brand-sm" href="index.html"><img src="logo-badge.png" alt=""><span>T‑Solutions</span></a>
+    <p>© 2025 T‑Solutions · Belgrade, Serbia</p>
+    <nav class="footer-nav">
+      <a href="services.html">Usluge</a><a href="work.html">Projekti</a><a href="about.html">O nama</a><a href="contact.html">Kontakt</a>
+    </nav>
+  </div>
 </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
-
