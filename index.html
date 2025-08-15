@@ -1,56 +1,43 @@
 <!doctype html>
 <html lang="sr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>T Solutions — Full-Stack Web, .NET, Games, AI</title>
-  <meta name="description" content="T Solutions iz Beograda: moderni sajtovi i web aplikacije (.NET), igre i AI. Dizajn, razvoj, održavanje.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="logo-badge.png">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>T-Solutions — Boutique Full-Stack Studio</title>
+<meta name="description" content="T-Solutions iz Beograda: elegantni sajtovi, .NET web aplikacije, mini igre i AI integracije.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"><link rel="icon" href="logo-badge.png">
 </head>
 <body>
-<header class="site-header">
-  <div class="container header-inner">
-    <a class="brand" href="index.html">
-      <img src="logo-mark.png" alt="T Solutions logo">
-      <span>T-Solutions</span>
-    </a>
-    <nav id="nav" class="nav">
-      <a href="services.html">Services</a>
-      <a href="work.html">Work</a>
-      <a href="about.html">About</a>
-      <a href="contact.html" class="btn btn--ghost">Contact</a>
-    </nav>
-    <button class="nav-toggle" aria-label="Meni" aria-expanded="false">☰</button>
-  </div>
-</header>
+<header class="site-header"><div class="container header-inner">
+  <a class="brand" href="index.html"><img src="logo-mark.png" alt=""><span>T-Solutions</span></a>
+  <nav id="nav" class="nav">
+    <a href="services.html">Services</a><a href="work.html">Work</a><a href="about.html">About</a>
+    <a href="contact.html" class="btn btn--ghost">Contact</a>
+  </nav><button class="nav-toggle" aria-label="Meni" aria-expanded="false">☰</button>
+</div></header>
 
 <section class="hero">
-  <div class="container">
-    <p class="eyebrow">Full-service studio · Belgrade, Serbia</p>
-    <h1>Sajtovi i web aplikacije koje <span class="accent">izgledaju lepo</span> i rade <span class="accent">brzo</span>.</h1>
-    <p class="lead">Full-stack web, .NET backend, mini igre i AI integracije. Dostava na vreme, meren rezultatima.</p>
-    <div class="cta">
-      <a class="btn" href="contact.html">Zatraži ponudu</a>
-      <a class="btn btn--ghost" href="work.html">Pogledaj radove</a>
-    </div>
-    <ul class="badges">
-      <li>HTML · CSS · JS</li><li>.NET (C#) · REST</li><li>UI/UX · SEO · Performance</li>
-    </ul>
+  <div class="hero__media" aria-hidden="true"></div>
+  <div class="container hero__inner">
+    <p class="eyebrow">Belgrade, Serbia · Boutique Studio</p>
+    <h1>Web &amp; .NET projekti koji <span class="accent">izgledaju prefinjeno</span> i <span class="accent">rade besprekorno</span>.</h1>
+    <p class="lead">Dizajn, front-end, .NET backend, mini igre i AI integracije. Minimalizam, brzina i merljiv učinak.</p>
+    <div class="cta"><a class="btn" href="contact.html">Zatraži ponudu</a> <a class="btn btn--ghost" href="work.html">Portfolio</a></div>
+    <ul class="badges"><li>HTML · CSS · JS</li><li>.NET (C#)</li><li>UI/UX · SEO · Performance</li></ul>
   </div>
 </section>
 
 <section class="section">
-  <div class="container">
-    <h2>Šta radimo</h2>
-    <p class="lead">Dizajn koji pretvara posetioce u klijente i razvoj koji je stabilan i brz.</p>
-    <div class="grid grid-3">
-      <article class="card"><h3>Web dizajn & UI/UX</h3><p>Wireframes, prototipi i čist vizuelni sistem.</p></article>
-      <article class="card"><h3>Front-end</h3><p>Pristupačni i SEO-spremni sajtovi sa odličnim performansama.</p></article>
-      <article class="card"><h3>.NET backend</h3><p>ASP.NET Core, REST API, baze podataka, autentikacija.</p></article>
+  <div class="container split">
+    <div>
+      <h2>Za brendove kojima treba <em>editorial</em> kvalitet</h2>
+      <p class="lead">Ne radimo generičke šablone. Svaki projekat je ručno dizajniran da diše – sa jasnim hijerarhijama, belim prostorom i naglaskom na tipografiju.</p>
+    </div>
+    <div class="card">
+      <h3>Brzi pregled</h3>
+      <ul class="badges" style="margin:0"><li>Design system</li><li>SEO setup</li><li>Hosting na GitHub/Cloud</li></ul>
+      <p style="margin-top:10px">Isporuka u sprintovima, transparentna komunikacija.</p>
     </div>
   </div>
 </section>
@@ -58,33 +45,20 @@
 <section class="section">
   <div class="container">
     <h2>Izdvojeni rad</h2>
-    <div class="grid grid-3 work-grid">
-      <a class="work" href="case-finance-app.html">
-        <div class="thumb"></div>
-        <div class="meta"><h3>Personal Finance App</h3><p>Praćenje troškova · JS + localStorage</p></div>
-      </a>
-      <a class="work" href="work.html#portfolio">
-        <div class="thumb"></div>
-        <div class="meta"><h3>Portfolio v1</h3><p>Minimalistički, svetlo roze, Lighthouse 100</p></div>
-      </a>
-      <a class="work" href="work.html#quiz">
-        <div class="thumb"></div>
-        <div class="meta"><h3>Quiz App</h3><p>JS logika + deljenje rezultata</p></div>
-      </a>
+    <div class="gallery">
+      <a href="work.html"><img src="img/work-1.jpg" alt="Work sample 1"></a>
+      <a href="work.html"><img src="img/work-2.jpg" alt="Work sample 2"></a>
+      <a href="work.html"><img src="img/work-3.jpg" alt="Work sample 3"></a>
     </div>
   </div>
 </section>
 
 <footer class="site-footer">
   <div class="container footer-inner">
-    <a class="brand-small" href="index.html"><img src="logo-badge.png" alt=""> <span>T-Solutions</span></a>
-    <p>© <span class="year"></span> T Solutions · Belgrade, Serbia</p>
+    <a class="brand-sm" href="index.html"><img src="logo-badge.png" alt=""><span>T-Solutions</span></a>
+    <p>© <span class="year"></span> T-Solutions · Belgrade, Serbia</p>
     <nav class="footer-nav">
-      <a href="services.html">Services</a>
-      <a href="work.html">Work</a>
-      <a href="about.html">About</a>
-      <a href="careers.html">Careers</a>
-      <a href="contact.html">Contact</a>
+      <a href="services.html">Services</a><a href="work.html">Work</a><a href="about.html">About</a><a href="contact.html">Contact</a>
     </nav>
   </div>
 </footer>
